@@ -53,27 +53,22 @@ class BankAccount {
     }
 }
 
-public class Main {
+public class Lab3 {
     public static void main(String[] args) {
 
-        // Create Bank Account
         BankAccount acc = new BankAccount("Dhruv", 1001, 6000);
 
-        // Deposit and Withdraw
         acc.deposit(2000);
         acc.withdraw(1000);
 
-        // Get Balance
         int currentBalance = acc.getBalance();
 
         System.out.println("Current Balance: " + currentBalance);
 
-        // Ternary Operator
         String status = (currentBalance >= 5000)
                 ? "Minimum Balance Maintained"
                 : "Minimum Balance not Maintained";
 
-        // Display Status
         System.out.println("Status: " + status);
     }
 }
